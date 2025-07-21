@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq8x7y2n8qkh"]
+
+[ext_resource type="Script" path="res://Scripts/TouchCameraController.gd" id="1_0hdqr"]
+
+[node name="TouchCameraController" type="Node3D"]
+script = ExtResource("1_0hdqr")
+camera_distance = 5.0
+camera_height = 2.0
+rotation_speed = 2.0
+zoom_speed = 1.0
+min_distance = 2.0
+max_distance = 10.0
+

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://pl4y3r"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_pl4y3r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_pl4y3r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_1")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+
+

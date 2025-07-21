@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://st4r"]
+
+[ext_resource type="Script" path="res://Scripts/Star.gd" id="1_st4r"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1"]
+radius = 2.0
+height = 4.0
+
+[node name="Star" type="MeshInstance3D"]
+mesh = SubResource("SphereMesh_1")
+script = ExtResource("1_st4r")
+
+[node name="Light" type="OmniLight3D" parent="."]
+light_energy = 2.0
+omni_range = 50.0
+
